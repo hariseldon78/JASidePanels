@@ -23,8 +23,7 @@
  SOFTWARE.
  */
 
-#import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 @class JASidePanelController;
 
 /* This optional category provides a convenience method for finding the current
