@@ -366,7 +366,7 @@ static char ja_kvoContext;
         // update the state immediately to prevent user interaction on the side panels while animating
         JASidePanelState previousState = self.state;
         self.state = JASidePanelCenterVisible;
-        [UIView animateWithDuration:0.2f animations:^{
+        [UIView animateWithDuration:0.05f animations:^{
             if (self.bounceOnCenterPanelChange) {
                 // first move the centerPanel offscreen
                 CGFloat x = (previousState == JASidePanelLeftVisible) ? self.view.bounds.size.width : -self.view.bounds.size.width;

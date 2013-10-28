@@ -29,7 +29,7 @@
 
 @implementation UIViewController (JASidePanel)
 
-- (JASidePanelController *)sidePanelController {
+- (JASidePanelController *)jaSidePanelController {
     UIViewController *iter = self.parentViewController;
     while (iter) {
         if ([iter isKindOfClass:[JASidePanelController class]]) {
@@ -43,4 +43,8 @@
     return nil;
 }
 
+-(BOOL)isCenterController
+{
+	return self.jaSidePanelController.centerPanel==self;
+}
 @end
